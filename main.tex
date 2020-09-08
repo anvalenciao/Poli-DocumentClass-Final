@@ -1,0 +1,145 @@
+\documentclass[spanish, letterpaper, 12pt]{book}
+
+% Language
+\usepackage[spanish,es-tabla]{babel} % Cargamos es-tabla para Tabla en lugar de Cuadro
+\usepackage[utf8]{inputenc} % Codificación de entrada
+\usepackage[T1]{fontenc} % Codificación de fuente
+\usepackage{times} % Loads the Times-Roman Fonts
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+% APA Style References
+\usepackage{url}
+\usepackage{apacite}
+
+% Table
+\usepackage{csvsimple}
+\usepackage{booktabs}
+\usepackage{longtable}
+
+%
+% Metadata
+%
+%\newcommand{\keywords}[1]{\def\@keywords{#1}}
+% Keywords command
+\providecommand{\keywords}[2]{
+	\vskip9pt
+	\noindent\color{black}\textbf{\textit{#1: }} \color{poliBlue}#2
+	\vskip18pt
+}
+
+\begin{document}
+% apacite in Spanish,"et al" used to appear like "y cols."
+\renewcommand{\BOthers}[1]{et al.\hbox{}}
+
+\frontmatter
+
+\begin{titlepage}
+	\begin{center}
+		\textbf{
+			INSTITUCIÓN UNIVERSITARIA POLITÉCNICO GRANCOLOMBIANO \\
+			FACULTAD DE INGENIERÍA Y CIENCIAS BÁSICAS \\
+			MAESTRÍA EN INGENIERÍA DE SISTEMAS \\
+			GRUPO DE INVESTIGACIÓN FICB-PG \\
+			ÍNEA DE PROFUNDIZACIÓN: INDICAR
+		}
+		\vspace{1cm}
+		
+		\textbf{“TÍTULO DEL TRABAJO”}
+		
+		\vspace{3cm}
+		\textbf{
+			PRESENTA: \\
+			NOMBRES Y APELLIDOS COMPLETOS \\
+			CÓDIGO
+		}
+		
+		\vspace{1.5cm}
+		\textbf{
+			ASESOR TEMÁTICO: \\
+			NOMBRES Y APELLIDOS COMPLETOS Y ACRÓNIMO DE ÚLTIMO TÍTULO OBTENIDO
+		}
+			
+		\vspace{5cm}
+		
+		Mes y Año de Presentación
+
+	\end{center}
+\end{titlepage}
+
+\tableofcontents
+\listoftables
+\listoffigures
+
+\mainmatter
+
+\chapter{Introducción}
+%\section{Introducción}
+Este apartado debe contener los antecedentes, justificación, sistematización, alcance y planteamiento del problema a abordar en el marco del proyecto de investigación de maestría y debe cerrar o con el objetivo central del trabajo o con la pregunta de investigación que planteare el estudiante y el planteamiento de los objetivos específicos derivados de ello, se sugiere que su extensión no sea mayor a 1800 palabras. Hay que cuidar que el tema de estudio en lo posible refleje las siguientes características:
+
+\begin{enumerate}
+	\item \textbf{Ser novedoso}: se debe revisar que tenga un aporte teórico, un aporte metodológico o que aborde un ámbito distinto a trabajos anteriores, con respecto a la revisión de literatura efectuada, de forma que los resultados del proyecto sean valiosos y atractivos para los diferentes escenarios de divulgación (revistas, ponencias, congresos, etc.)
+	\item \textbf{Orientación}: estar orientado a que sus resultados sirvan a la solución de problemáticas concretas y actuales en las áreas de conocimiento propias de la Maestría y del grupo de investigación de la Facultad de Ingeniería y Ciencias Básicas.
+	\item \textbf{Pertinencia}: evidenciar el impacto que tendrá la ejecución del proyecto en un contexto determinado.
+	\item \textbf{Factible}: prever que el proceso de investigación sea posiblemente ejecutado en términos de tiempo (un año) y recursos.
+	\item \textbf{Evidenciable}: prever y dimensionar la forma en que se lograría evidenciar el logro (entregables) de cada uno de los objetivos planteados.
+\end{enumerate}
+
+Para el planteamiento y formulación del problema se sugiere que tenga en cuenta:
+\begin{enumerate}
+	\item El problema expresa la relación entre dos o más variables
+	\item El problema y los objetivos relacionados dejan claro el contexto en el cual se desarrolla el proyecto.
+	\item El problema se debe formular con claridad y evitando ambigüedades.
+	\item El problema debe ser susceptible de validación o comprobación empírica.
+	\item Los objetivos y el problema deben ser coherentes.
+\end{enumerate}
+
+
+\chapter{Revisión de Literatura}
+Este apartado debe contener la literatura relevante y adecuada que expresa las posturas teóricas respecto al problema planteado en el apartado anterior. En coherencia con lo anterior, debe contener las variables que se pretenden a abordar en el marco del proyecto de investigación de maestría, dando cuenta de su relación y relevancia en el contexto o ámbito en el que se desarrollaría la investigación, se sugiere que su extensión no sea mayor a 6.000 palabras y que lleve títulos y subtítulos que lleven y orienten al lector de lo general a lo particular. De igual forma, la literatura que se referencie debe estar en una ventana de observación de máximo 10 años con respecto a la fecha de escritura del documento.
+
+\section{Sobre el uso de tablas y figuras}
+Las tablas y figuras deben estar enumeradas consecutivamente y deben ser explicadas y referenciadas en el marco del texto, se sugiere usar el editor automático de Word; asimismo, al final de cada una de ellas se debe dar cuenta de su fuente. Ejemplo:
+
+\begin{table}[h]
+	\caption{Cantidad de Investigadores de Colombia según la evaluación de desempeño de actividades científicas de 2013.}
+	\label{tab:caption}
+	\begin{center}
+		\csvautobooktabular{table1.csv}
+	\end{center}
+	Fuente: Elaboración propia a partir de \citeA{colciencias2015modelo}
+\end{table}
+
+
+\chapter{Estrategia Metodológica}
+Este apartado debe contener la manera en la cual se abordará el problema en coherencia con su naturaleza, se sugiere que su extensión no sea mayor a 2000 palabras. Se debe exponer, sustentar y justificar:
+
+\begin{enumerate}
+	\item El enfoque metodológico.
+	\item El diseño muestral o de abordaje de participantes.
+	\item La descripción del universo, población, muestra o participantes, según aplique, dando cuenta de los criterios o mecanismos de inclusión o exclusión y los aspectos éticos para abordarles y para el manejo de su información.
+	\item La descripción de las variables y las relaciones a verificar en ellas, y si aplica planteamiento de hipótesis.
+	\item Los instrumentos teniendo en cuenta los ejes de indagación, categorías orientadoras, relación y operacionalización de variables e indicadores, según aplique.
+	\item Los mecanismos para dar validez y rigor a los instrumentos, trabajos de campo y en general la ejecución metodológica.
+	\item Las maneras y aplicativos para procesar la información detallando el procedimiento para tal fin.
+\end{enumerate}
+
+
+\chapter{Desarrollo e Implementación (Avances)}
+En esta sección se presentan y explican, a modo de avances, las herramientas desarrolladas y particularidades de la implementación según los pasos presentados en la metodología. Si aplica, se presenta el escenario particular de aplicación de la metodología, y la forma en que dicho escenario o contexto modifica o afecta la forma de implementación. Puede así presentarse en esta sección el diseño de experimentos y el detalle del conjunto de datos y variables de entrada.\\
+Se presentan también aspectos técnicos que sean relevantes en el proyecto y que hayan de alguna manera afectado (de manera positiva o negativa) el procesamiento o la obtención de los resultados.
+
+
+\chapter{Resultados Preliminares}
+Este apartado debe contener los hallazgos y resultados preliminares de haber implementado los pasos de la metodología, de preferencia en el orden del planteamiento que llevan los objetivos específicos del trabajo. En este apartado no se hacen conclusiones o sugerencias, sino se presenta la información tal cual fue obtenida de las fuentes de las que se dio cuenta en el apartado de ESTRATEGIA METODOLÓGICA.
+
+\backmatter
+% bibliography, glossary and index would go here.
+
+\bibliographystyle{apacite}
+\bibliography{bibliography}
+Este apartado debe dar cuenta de TODOS los textos a los que efectivamente se hizo referencia en el marco del texto, no se deben incluir textos a lo que no se haya hecho alusión. Se sugiere usar el editor automático de Word o Mendeley. El formato de las referencias para esta entrega es el más reciente indicado por la Asociación Americana de Psicología (APA, por sus siglas en inglés).
+
+\end{document}
